@@ -1,0 +1,147 @@
+/* Importando uma fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Variáveis de cores para padronizar o visual do projeto */
+:root {
+    --cor-primaria: #2c3e50;
+    --cor-secundaria: #ecf0f1;
+    --cor-destaque: #3498db;
+    --cor-texto: #333;
+    --cor-fundo-card: #ffffff;
+    --sombra: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset básico para remover margens padrão dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+/* ================================
+   ESTILOS DO CABEÇALHO (HEADER)
+   ================================ */
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: var(--sombra);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+header img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: var(--sombra);
+}
+
+/* Estilo do botão de navegação */
+nav button {
+    background-color: var(--cor-destaque);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+nav button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ================================
+   ESTILOS DO CONTEÚDO (MAIN)
+   ================================ */
+main {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem a linha */
+    justify-content: center;
+    gap: 20px; /* Espaço entre os cards */
+}
+
+main > h1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--cor-primaria);
+    font-size: 2.2rem;
+}
+
+/* ================================
+   ESTILOS DOS PRODUTOS (ARTICLE)
+   ================================ */
+article {
+    background-color: var(--cor-fundo-card);
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px; /* Tamanho máximo do card */
+    box-shadow: var(--sombra);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+article h2 {
+    color: var(--cor-primaria);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+article h3 {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+}
+
+article img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain; /* Garante que a imagem não fique esticada */
+    border-radius: 5px;
+}
+
+/* ================================
+   ESTILOS DO RODAPÉ (FOOTER)
+   ================================ */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--cor-primaria);
+    color: white;
+    border-radius: 8px;
+    margin-top: 3rem;
+    box-shadow: var(--sombra);
+}
