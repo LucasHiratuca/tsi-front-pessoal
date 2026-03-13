@@ -31,7 +31,7 @@ body {
 header {
     background-color: var(--cor-primaria);
     color: white;
-    padding: 2rem 1rem;
+    padding: 0.5rem 1rem;
     box-shadow: var(--sombra);
 
     display: flex;
@@ -50,30 +50,28 @@ img {
     height: auto;
     max-height: 300px;
     border-radius: 8px;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem auto; /* centraliza */
+    display: block; /* necessário para centralizar */
     box-shadow: var(--sombra);
 }
 
 /* Estilo do botão de navegação */
-nav button {
-    background-color: var(--cor-destaque);
-    border: none;
-    padding: 12px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
+
 
 nav button:hover {
     background-color: lightblue;
     transform: scale(1.05);
 }
 
-nav button a {
-    text-decoration: none;
+nav button {
+    background: var(--cor-destaque);
     color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* ================================
