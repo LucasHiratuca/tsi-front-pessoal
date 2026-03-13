@@ -31,20 +31,24 @@ body {
 header {
     background-color: var(--cor-primaria);
     color: white;
-    text-align: center;
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
     box-shadow: var(--sombra);
+
+    display: flex;
+    justify-content: space-between; /* separa esquerda e direita */
+    align-items: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     margin-bottom: 1.5rem;
 }
 
-header img {
-    width: 100%;
-    max-width: 800px;
+img {
+    width: 150%;
+    max-width: 1500px;
     height: auto;
+    max-height: 300px;
     border-radius: 8px;
     margin-bottom: 2rem;
     box-shadow: var(--sombra);
@@ -61,7 +65,7 @@ nav button {
 }
 
 nav button:hover {
-    background-color: #2980b9;
+    background-color: lightblue;
     transform: scale(1.05);
 }
 
@@ -109,7 +113,8 @@ article {
 
 article:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px 
+    rgba(1, 1, 1, 0.2);
 }
 
 article h2 {
@@ -122,7 +127,7 @@ article h3 {
     font-size: 1rem;
     color: #7f8c8d;
     margin-bottom: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 article img {
@@ -137,11 +142,8 @@ article img {
    ================================ */
 footer {
     width: 100%;
-    text-align: center;
+    text-align: left;
     padding: 1.5rem;
-    background-color: var(--cor-primaria);
-    color: white;
     border-radius: 8px;
     margin-top: 3rem;
-    box-shadow: var(--sombra);
 }
